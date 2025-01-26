@@ -1,0 +1,294 @@
+/* Main Styles */
+.landing-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 3rem;
+  background-color: #000; /* Black header */
+  color: #fff;
+  border-bottom: 2px solid #444; /* Add a border for contrast */
+}
+
+.header h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  text-transform: uppercase; /* Bold and uppercase heading */
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-weight: 300; /* Lighter text weight for description */
+}
+
+/* Loan Categories */
+.loan-categories {
+  padding: 3rem 2rem;
+}
+
+.categories-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-card {
+  background-color: #fff; /* White card background */
+  border: 1px solid #333; /* Black border */
+  border-radius: 15px;
+  width: 280px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.category-card h3 {
+  color: #000; /* Black text for titles */
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.category-card p {
+  color: #555; /* Grey text for descriptions */
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.category-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.category-card li {
+  color: #555; /* Grey text for list items */
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Loan Calculator */
+.loan-calculator {
+  background-color: #fff; /* White background for the calculator */
+  padding: 3rem;
+  border-radius: 15px;
+  margin-top: 3rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loan-calculator h2 {
+  color: #000; /* Black color for headings */
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.calculator-form {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}
+
+.form-group label {
+  color: #333; /* Black text for labels */
+  font-size: 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #333; /* Black border */
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.form-group input:focus {
+  border-color: #000; /* Black border on focus */
+  outline: none;
+}
+
+.custom-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-header {
+  padding: 1rem;
+  border: 1px solid #333; /* Black border */
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-header:hover {
+  background-color: #f0f0f0; /* Subtle hover effect */
+}
+
+.dropdown-list {
+  position: absolute;
+  width: 100%;
+  border: 1px solid #333; /* Black border */
+  background-color: #fff;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.dropdown-item {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333; /* Black text for dropdown items */
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0; /* Light grey hover effect */
+}
+
+.calculate-btn {
+  background-color: #000; /* Black button */
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.calculate-btn:hover {
+  background-color: #333; /* Dark grey hover effect */
+}
+
+.calculate-btn:disabled {
+  background-color: #ccc; /* Greyed out button when disabled */
+  cursor: not-allowed;
+}
+
+/* EMI Result */
+.emi-result {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #000; /* Black text for result */
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.emi-result p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Darker overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff; /* White modal background */
+  padding: 3rem;
+  border-radius: 15px;
+  width: 450px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-btn, .close-btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  background-color: #000; /* Black button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover, .close-btn:hover {
+  background-color: #333; /* Dark grey hover effect */
+}
+
+.close-btn {
+  background-color: #999; /* Grey close button */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .loan-categories {
+    padding: 2rem;
+  }
+
+  .categories-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-card {
+    width: 90%; /* Make cards full width on mobile */
+    margin-bottom: 2rem;
+  }
+
+  .loan-calculator {
+    padding: 2rem;
+    max-width: 100%;
+  }
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #000; /* Black background for footer */
+  color: #fff; /* White text color */
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  font-weight: 300;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,158 @@
+/* Overall container for the dashboard */
+.admin-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f4f7fc; /* Light background for the whole page */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Container for the sidebar and main content */
+.admin-dashboard-content {
+  display: flex;
+  flex-grow: 1;
+  transition: margin-left 0.3s ease;
+}
+
+/* Sidebar */
+.admin-dashboard-content .sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 240px;
+  background-color: #2f3d46;
+  padding: 30px 20px;
+  height: 100vh;
+  transition: transform 0.3s ease;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  z-index: 10;
+}
+
+/* Sidebar expanded behavior */
+.admin-dashboard-content .sidebar.expanded {
+  transform: translateX(-100%);
+}
+
+/* Main Content */
+.admin-main-content {
+  flex-grow: 1;
+  padding: 30px;
+  transition: margin-left 0.3s ease;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 240px;
+}
+
+/* Content that adjusts with sidebar open/closed */
+.admin-main-content.expanded {
+  margin-left: 0;
+}
+
+/* Page title */
+.page-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+
+/* Container for the loan request cards */
+.loan-requests-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Cards for each loan request */
+.loan-request-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* Each Loan Request Card */
+.loan-request-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.loan-request-card:hover {
+  transform: translateY(-10px);
+}
+
+.loan-request-card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.loan-request-card p {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 0.75rem;
+}
+
+.loan-request-card button {
+  background-color: #38a169;
+  color: #fff;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loan-request-card button:hover {
+  background-color: #2f855a;
+}
+
+/* Guarantee Popup Styling */
+.guarantee-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 20;
+  width: 400px;
+}
+
+.guarantee-popup h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.guarantee-popup p {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+}
+
+.guarantee-popup button {
+  background-color: #3182ce;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.guarantee-popup button:hover {
+  background-color: #2b6cb0;
+}

@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  /* Primary Colors */
+  --primary-navy: #1e3a5f; /* Soft navy blue */
+  --primary-sky: #4fa3d1; /* Sky blue with a hint of warmth */
+
+  /* Secondary Colors */
+  --secondary-green: #50c9b7; /* Lush mint green */
+  --secondary-yellow: #ffcb77; /* Warm golden yellow */
+
+  /* Backgrounds & Neutrals */
+  --bg-light: #f9f9f9; /* Soft light gray */
+  --bg-white: #ffffff; /* Clean white */
+  --neutral-dark: #2d2f35; /* Darker, softer gray for text */
+
+  /* Error & Alerts */
+  --error-red: #e57373; /* Softer red for error messages */
+  --warning-orange: #ff9b42; /* Gentle orange for warning messages */
+
+  /* Typography */
+  --text-primary: #333333; /* Deep gray for text */
+  --text-secondary: #888888; /* Light gray for secondary text */
+}
+

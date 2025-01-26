@@ -1,0 +1,115 @@
+/* Modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modal container */
+  .modal-container {
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 960px;
+    overflow-y: auto;
+    max-height: 60vh;
+  }
+  
+  /* Title */
+  .modal-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 16px;
+  }
+  
+  /* Form grid */
+  .modal-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  @media (min-width: 768px) {
+    .modal-form {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Form group */
+  .form-group {
+    margin-bottom: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  
+  .form-group h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  /* Labels */
+  .form-group label {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Inputs */
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    margin-bottom: 16px;
+  }
+  
+  .input-field:focus {
+    border-color: #2563eb;
+    outline: none;
+  }
+  
+  /* Buttons */
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+  
+  .modal-buttons button {
+    padding: 12px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .modal-buttons .cancel-btn {
+    background-color: #d1d5db;
+    color: #374151;
+    border: none;
+  }
+  
+  .modal-buttons .cancel-btn:hover {
+    background-color: #9ca3af;
+  }
+  
+  .modal-buttons .submit-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+  }
+  
+  .modal-buttons .submit-btn:hover {
+    background-color: #1d4ed8;
+  }
